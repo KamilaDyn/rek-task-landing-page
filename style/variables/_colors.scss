@@ -1,0 +1,13 @@
+$yellow: #d1e85a;
+$blue: #26bbe1;
+$green: #7fd1be;
+$pink-100: #f5cdd5;
+$pink-500: #944385;
+
+$pink-filter: brightness(0) saturate(100%) invert(88%) sepia(4%) saturate(1534%)
+  hue-rotate(301deg) brightness(92%) contrast(111%);
+$yellow-filter: brightness(0) saturate(100%) invert(98%) sepia(59%)
+  saturate(1217%) hue-rotate(10deg) brightness(100%) contrast(83%);
+
+$white-filter: brightness(0) saturate(100%) invert(100%) sepia(98%) saturate(0%)
+  hue-rotate(315deg) brightness(104%) contrast(102%);

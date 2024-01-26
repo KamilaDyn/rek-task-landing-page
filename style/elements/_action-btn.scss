@@ -1,0 +1,28 @@
+.action-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &__text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    &--in-lines {
+      margin-right: 24px;
+      text-transform: none;
+    }
+  }
+  &__arrow {
+    width: 16px;
+    height: 16px;
+    background-image: url('../../assets/arrow-up.svg');
+    background-size: cover;
+    display: inline-block;
+    &--big {
+      width: 40px;
+      height: 40px;
+    }
+    &--rotate {
+      transform: rotate(180deg);
+    }
+  }
+}

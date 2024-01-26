@@ -1,0 +1,46 @@
+.line {
+  display: block;
+  font-weight: 700;
+}
+
+.arrow {
+  display: inline-block;
+  padding: 6px;
+  border: solid black;
+  transform: rotate(45deg);
+
+  border-width: 0 3px 3px 0;
+
+  &--up {
+    transform: rotate(-135deg);
+  }
+
+  &--white {
+    border-color: white;
+  }
+  &--yellow {
+    border-color: $yellow;
+  }
+}
+
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+.inner-wrapper {
+  padding-inline: 30px;
+  @include md {
+    padding-inline: 3%;
+  }
+  @include xl {
+    padding-inline: 5%;
+  }
+  @include xxl {
+    padding-inline: 10%;
+  }
+}

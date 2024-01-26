@@ -1,0 +1,6 @@
+.mobile-wrapper {
+  position: relative;
+  &--active {
+    background-color: $blue;
+  }
+}

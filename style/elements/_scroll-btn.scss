@@ -1,0 +1,19 @@
+.scroll-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: $pink-500;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &__arrow {
+    width: 26px;
+    height: 30px;
+    background-image: url('../../assets/arrow-down.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

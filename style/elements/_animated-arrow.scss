@@ -1,0 +1,50 @@
+.arrow-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 5px;
+  max-width: 170px;
+  cursor: pointer;
+  &__arrow {
+    transform: rotate(-136deg);
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid #000;
+    border-left: 3px solid #000;
+    transform: 2s ease;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 3px;
+      height: 20px;
+      background-color: black;
+      transform: rotate(-45deg) translate(6px, 0px);
+      left: 0;
+      top: 0;
+    }
+  }
+  &__header {
+    @include subtitle;
+    margin-top: 0;
+    padding-left: 5px;
+  }
+  &:hover {
+    .arrow-container__arrow {
+      border-color: $pink-500;
+      margin-top: 30px;
+      &::before {
+        height: 46px;
+        transform: rotate(-45deg) translate(15px, 5px);
+        background-color: $pink-500;
+      }
+    }
+    .arrow-container__header {
+      color: $pink-500;
+    }
+  }
+}

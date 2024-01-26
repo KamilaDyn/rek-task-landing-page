@@ -1,0 +1,47 @@
+.links-buttons {
+  padding-left: 30px;
+  display: none;
+  @include lg {
+    display: block;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 21px;
+    list-style: none;
+  }
+}
+.button {
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 42px;
+  height: 42px;
+  padding: 0 20px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  background-color: white;
+  letter-spacing: 0.1rem;
+  border-radius: 84px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  &:hover {
+    color: $pink-500;
+  }
+
+  &--one {
+    &:hover {
+      background-color: $green;
+    }
+  }
+  &--two {
+    &:hover {
+      background-color: $pink-100;
+    }
+  }
+}

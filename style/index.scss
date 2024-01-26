@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: 'arboria', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 14px;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+// Variables
+@import './variables/colors';
+@import './variables/mixin';
+@import './variables/breakpoints';
+
+// Elements
+@import './elements/animated-arrow';
+
+@import './elements/common';
+@import './elements/mobile-wrapper';
+@import './elements/_header';
+@import './elements/_hamburger';
+@import './elements/_menu';
+@import './elements/_nav';
+@import './elements/_card';
+@import './elements/_action-btn';
+@import './elements/scroll-btn';
+@import './elements/links-buttons';
+@import './elements/social-group';
+
+// Sections
+@import './sections/section';
+@import './sections/banner';
+@import './sections/offers';
+@import './sections/faq';

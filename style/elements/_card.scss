@@ -1,0 +1,50 @@
+.card {
+  border: 1px solid $yellow;
+  padding: 36px 42px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, fr);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  &__salary {
+    font-size: 28px;
+    line-height: 36px;
+    color: $blue;
+    font-weight: 700;
+  }
+  &__info {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  &__description {
+    margin-top: 22px;
+    margin-bottom: 32px;
+  }
+  &__description-title {
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  &__description-text {
+    @include text();
+  }
+  &__btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &:hover {
+    background-color: $yellow;
+    border-radius: 50px;
+  }
+}
