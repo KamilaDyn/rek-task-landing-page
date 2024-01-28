@@ -5,12 +5,10 @@ class HamburgerMenu {
     this.hamburgerBtn = document.querySelector('#hamburgerBtn');
     this.menu = document.querySelector('#menu');
     this.body = document.querySelector('body');
-
     this.hamburgerBtn.addEventListener('click', this.toggleMenu.bind(this));
   }
 
   toggleMenu() {
-    console.log('click');
     this.hamburgerBtn.classList.toggle('active');
     this.menu.classList.toggle('active');
     this.body.classList.toggle('no-scroll');

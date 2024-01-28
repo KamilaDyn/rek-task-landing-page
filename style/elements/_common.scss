@@ -44,3 +44,7 @@
     padding-inline: 10%;
   }
 }
+.item--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}

@@ -86,7 +86,7 @@
           </div>
         </section>
       </section>
-      <section id="offers-anchor" class="offers">
+      <section id="offers-anchor" class="offers lazy">
         <div class="inner-wrapper">
           <header class="section-header offers__header">
             <div class="section-header__text">
@@ -103,8 +103,8 @@
             </div>
           </header>
           <section class="offers__container">
-            <ul class="offers__list">
-              <li class="offers__item">
+            <ul id="listOffer" class="offers__list">
+              <li class="offers__item lazy">
                 <div class="card fade-in">
                   <header class="card__header">
                     <h3 class="card__title">Hydraulik</h3>
@@ -136,7 +136,7 @@
           </section>
         </div>
       </section>
-      <section id="faq-anchor" class="faq">
+      <section id="faq-anchor" class="faq lazy">
         <div class="inner-wrapper">
           <header class="section section-header">
             <h2 class="section-header__title section-header__title--white">
@@ -144,7 +144,7 @@
             </h2>
           </header>
           <div class="faq__tabs">
-            <div class="faq__tab">
+            <div class="faq__tab lazy">
               <div class="faq__tab-btn action-btn active">
                 <h3
                   class="faq__tab-text action-btn__text action-btn__text--in-lines active"
@@ -157,7 +157,7 @@
                 ></div>
               </div>
             </div>
-            <div class="faq__tab">
+            <div class="faq__tab lazy">
               <div class="faq__tab-btn action-btn">
                 <h3
                   class="faq__tab-text action-btn__text action-btn__text--in-lines"
@@ -171,7 +171,7 @@
           </div>
           <div class="faq__content">
             <div class="faq__columns">
-              <ul class="faq__list faq__column faq__column--1">
+              <ul class="faq__list faq__column faq__column--1 lazy">
                 <li class="faq__item">
                   <div class="faq__question">
                     <header class="faq__question-header">
@@ -273,7 +273,7 @@
                   </div>
                 </li>
               </ul>
-              <ul class="faq__list faq__column faq__column--2">
+              <ul class="faq__list faq__column faq__column--2 lazy">
                 <li class="faq__item">
                   <div class="faq__question">
                     <header class="faq__question-header">
@@ -434,6 +434,7 @@
       </section>
     </main>
     <script src="./scripts/toggleMobileMenu.js"></script>
+    <script src="./scripts/lazyLoading.js"></script>
 
     <script src="./scripts/index.js"></script>
     <script src="./scripts/expandAnswer.js"></script>

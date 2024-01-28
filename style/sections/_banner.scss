@@ -76,7 +76,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      min-width: 30%;
+      max-width: 280px;
     }
     @include md-mobile-landscape {
       flex-direction: row;
@@ -89,20 +89,16 @@
     line-height: 74px;
     text-align: center;
     color: white;
-    max-width: 320px;
+    max-width: 300px;
     margin-inline: auto;
 
     @include sm {
       text-align: left;
       line-height: 65px;
       font-size: 65px;
-      width: 30%;
-      min-width: 320px;
       margin-inline: 0;
     }
-    @include md {
-      max-width: 320px;
-    }
+
     @include sm-mobile-landscape {
       font-size: 48px;
       line-height: 52px;
@@ -132,6 +128,10 @@
       width: 40px;
       height: 40px;
     }
+    @include md-mobile-landscape {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__columns {
@@ -156,10 +156,9 @@
     background-color: $pink-100;
   }
   &__column-two {
-    background-image: url(../../assets/man.svg);
+    background-image: url(../../assets/man.webp);
   }
   &__column-three {
-    background-image: url(../../assets/woman.svg);
-    position: relative;
+    background-image: url(../../assets/woman.webp);
   }
 }

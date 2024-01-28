@@ -4,13 +4,11 @@ class ScrollManager {
   constructor() {
     this.scrollBtn = document.querySelector('#scrollBtn');
     this.navLinks = document.querySelectorAll('.nav__item');
-
     this.initialize();
   }
 
   scroll(event) {
     const id = event.target.getAttribute('href');
-    console.log(id);
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
 

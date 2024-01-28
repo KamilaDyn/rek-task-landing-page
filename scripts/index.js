@@ -53,7 +53,7 @@ class OfferCard {
 
   createCard() {
     const card = document.createElement('li');
-    card.classList.add('offers__item');
+    card.classList.add('offers__item', 'lazy');
 
     const cardContent = `
       <div class="card fade-in">
