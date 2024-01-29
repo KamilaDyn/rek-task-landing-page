@@ -31,7 +31,7 @@ class ScrollManager {
   setupScrollButton() {
     this.scrollBtn.addEventListener('click', () => {
       document
-        .querySelector('#faq-anchor')
+        .querySelector('#offers-anchor')
         .scrollIntoView({ behavior: 'smooth' });
     });
   }
