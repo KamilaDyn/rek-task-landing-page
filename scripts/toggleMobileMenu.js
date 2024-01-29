@@ -6,13 +6,17 @@ class HamburgerMenu {
     this.menu = document.querySelector('#menu');
     this.body = document.querySelector('body');
     this.navList = document.querySelector('#navList');
-    this.hamburgerBtn.addEventListener('click', this.toggleMenu.bind(this));
     this.navLinks = document.querySelectorAll('.nav__link');
-    this.navLinks.forEach((link) => {
-      link.addEventListener('click', (e) => this.closeMenu(e, link));
-    });
 
-    window.addEventListener('resize', this.handleResize.bind(this));
+    this.handleHamburgerClick = this.toggleMenu.bind(this);
+    this.handleLinkClick = (e, link) => this.closeMenu(e, link);
+    this.handleResize = this.handleResize.bind(this);
+
+    this.hamburgerBtn.addEventListener('click', this.handleHamburgerClick);
+    this.navLinks.forEach((link) => {
+      link.addEventListener('click', (e) => this.handleLinkClick(e, link));
+    });
+    window.addEventListener('resize', this.handleResize);
   }
 
   toggleMenu() {

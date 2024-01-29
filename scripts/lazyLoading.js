@@ -3,6 +3,8 @@
 class LazyLoadObserver {
   constructor(selector, options = {}) {
     this.items = document.querySelectorAll(selector);
+    this.revealElements = this.revealElements.bind(this);
+
     this.options = options;
     this.init();
   }
@@ -20,10 +22,7 @@ class LazyLoadObserver {
       item.classList.add('item--hidden');
     });
 
-    this.observer = new IntersectionObserver(
-      this.revealElements.bind(this),
-      this.options
-    );
+    this.observer = new IntersectionObserver(this.revealElements, this.options);
 
     this.items.forEach((item) => {
       this.observer.observe(item);
