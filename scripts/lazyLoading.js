@@ -1,3 +1,5 @@
+'use strict';
+
 class LazyLoadObserver {
   constructor(selector, options = {}) {
     this.items = document.querySelectorAll(selector);

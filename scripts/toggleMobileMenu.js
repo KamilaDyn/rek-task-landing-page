@@ -1,4 +1,4 @@
-'use-strict';
+'use strict';
 
 class HamburgerMenu {
   constructor() {
@@ -20,6 +20,7 @@ class HamburgerMenu {
     this.menu.classList.toggle('active');
     this.body.classList.toggle('no-scroll');
   }
+
   closeMenu(e, link) {
     e.preventDefault();
     const closestLink = link.closest('#navList');
@@ -32,6 +33,7 @@ class HamburgerMenu {
     this.toggleMenu();
     this.body.classList.remove('no-scroll');
   }
+
   handleResize() {
     const bodyWidth = this.body.getBoundingClientRect().width;
     if (bodyWidth > 992) {
