@@ -17,6 +17,10 @@ body {
   overflow-x: hidden;
 }
 
+li {
+  list-style: none;
+}
+
 .arrow-container {
   display: flex;
   align-items: flex-start;
@@ -171,6 +175,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 @media (min-width: 992px) {
   .hamburger {
@@ -282,7 +288,6 @@ body {
   padding: 36px 42px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, fr);
-  transition: 0.2s ease-in;
   cursor: pointer;
 }
 .card__header {
@@ -796,6 +801,7 @@ body {
   list-style: none;
   width: 100%;
   padding-bottom: 12px;
+  transition: all 0.1s linear;
 }
 .faq__question {
   color: white;
@@ -803,13 +809,6 @@ body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   padding: 12px 0 12px 9px;
-}
-.faq__description {
-  grid-column: span 5;
-  text-align: justify;
-  padding-top: 20px;
-  padding-bottom: 12px;
-  display: none;
 }
 .faq__question.active {
   color: #000;
@@ -820,16 +819,17 @@ body {
 .faq__question.active .faq__description {
   display: block;
 }
+.faq__question-header {
+  grid-column: span 5;
+  font-size: 20px;
+  font-weight: 700;
+}
 .faq__description {
   grid-column: span 5;
   text-align: justify;
   padding-top: 20px;
   padding-bottom: 12px;
-}
-.faq__question-header {
-  grid-column: span 5;
-  font-size: 20px;
-  font-weight: 700;
+  display: none;
 }
 .faq__btn {
   cursor: pointer;

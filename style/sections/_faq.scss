@@ -1,6 +1,7 @@
 .faq {
   background-color: $blue;
   padding-block: 80px;
+
   &__tabs {
     display: flex;
     flex-direction: column;
@@ -60,6 +61,7 @@
     list-style: none;
     width: 100%;
     padding-bottom: 12px;
+    transition: all 0.1s linear;
   }
 
   &__question {
@@ -70,13 +72,6 @@
     padding: 12px 0 12px 9px;
   }
 
-  &__description {
-    grid-column: span 5;
-    text-align: justify;
-    padding-top: 20px;
-    padding-bottom: 12px;
-    display: none;
-  }
   &__question.active {
     color: #000;
     background-color: white;
@@ -86,17 +81,20 @@
       display: block;
     }
   }
-  &__description {
-    grid-column: span 5;
-    text-align: justify;
-    padding-top: 20px;
-    padding-bottom: 12px;
-  }
   &__question-header {
     grid-column: span 5;
     font-size: 20px;
     font-weight: 700;
   }
+
+  &__description {
+    grid-column: span 5;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    display: none;
+  }
+
   &__btn {
     cursor: pointer;
     grid-column: 6;

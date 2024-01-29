@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,8 +13,12 @@
     <section class="mobile-wrapper">
       <header class="header">
         <div class="header__wrapper inner-wrapper">
-          <div class="header__logo">
-            <img src="./assets/logo-horizontal.svg" alt="logo of john weston" />
+          <div class="header__logo" tabindex="0">
+            <a href="/"
+              ><img
+                src="./assets/logo-horizontal.svg"
+                alt="logo of john weston"
+            /></a>
           </div>
           <div id="menu" class="menu header__menu">
             <nav class="menu__nav nav">
@@ -47,11 +51,15 @@
               </ul>
             </div>
           </div>
-          <div id="hamburgerBtn" class="hamburger header__hamburger">
-            <div class="hamburger__line hamburger__line--1"></div>
-            <div class="hamburger__line hamburger__line--2"></div>
-            <div class="hamburger__line hamburger__line--3"></div>
-          </div>
+          <button
+            id="hamburgerBtn"
+            class="hamburger header__hamburger"
+            aria-label="menu"
+          >
+            <span class="hamburger__line hamburger__line--1"></span>
+            <span class="hamburger__line hamburger__line--2"></span>
+            <span class="hamburger__line hamburger__line--3"></span>
+          </button>
         </div>
       </header>
     </section>
@@ -74,14 +82,17 @@
                 id="scrollBtn"
                 role="button"
                 class="scroll-btn banner__scroll"
+                tabindex="0"
               >
                 <div class="scroll-btn__arrow"></div>
               </div>
             </div>
             <div class="social-group">
-              <a class="social"><div class="social__icon social--fb"></div></a>
-              <a class="social"
-                ><div class="social__icon social--inst"></div
+              <a class="social" href="https://www.facebook.com/"
+                ><span class="social__icon social--fb"></span
+              ></a>
+              <a class="social" href="https://www.instagram.com/"
+                ><span class="social__icon social--inst"></span
               ></a>
             </div>
           </div>
@@ -125,9 +136,15 @@
                     </p>
                   </div>
                   <div class="card__btn">
-                    <div class="action-btn">
+                    <div
+                      class="action-btn"
+                      role="button"
+                      aria-label="więcej"
+                      tabindex="0"
+                    >
                       <p class="action-btn__text">
-                        WIĘCEJ <span class="action-btn__arrow"></span>
+                        WIĘCEJ
+                        <span class="action-btn__arrow"></span>
                       </p>
                     </div>
                   </div>
@@ -146,7 +163,12 @@
           </header>
           <div class="faq__tabs">
             <div class="faq__tab lazy">
-              <div class="faq__tab-btn action-btn active">
+              <div
+                class="faq__tab-btn action-btn active"
+                role="button"
+                aria-label="pytania pracodawców"
+                tabindex="0"
+              >
                 <h3
                   class="faq__tab-text action-btn__text action-btn__text--in-lines active"
                 >
@@ -159,7 +181,12 @@
               </div>
             </div>
             <div class="faq__tab lazy">
-              <div class="faq__tab-btn action-btn">
+              <div
+                class="faq__tab-btn action-btn"
+                role="button"
+                aria-label="pytania pracowników"
+                tabindex="0"
+              >
                 <h3
                   class="faq__tab-text action-btn__text action-btn__text--in-lines"
                 >
@@ -193,7 +220,12 @@
                         curabitur mauris morbi.
                       </p>
                     </div>
-                    <div class="faq__btn" role="button">
+                    <div
+                      class="faq__btn"
+                      role="button"
+                      aria-label="open"
+                      tabindex="0"
+                    >
                       <div class="arrow arrow--white"></div>
                     </div>
                   </div>
@@ -218,7 +250,12 @@
                         curabitur mauris morbi.
                       </p>
                     </div>
-                    <div class="faq__btn" role="button">
+                    <div
+                      class="faq__btn"
+                      role="button"
+                      aria-label="open"
+                      tabindex="0"
+                    >
                       <div class="arrow arrow--white"></div>
                     </div>
                   </div>
@@ -243,7 +280,12 @@
                         curabitur mauris morbi.
                       </p>
                     </div>
-                    <div class="faq__btn" role="button">
+                    <div
+                      class="faq__btn"
+                      role="button"
+                      aria-label="open"
+                      tabindex="0"
+                    >
                       <div class="arrow arrow--white"></div>
                     </div>
                   </div>
@@ -268,7 +310,12 @@
                         curabitur mauris morbi.
                       </p>
                     </div>
-                    <div class="faq__btn" role="button">
+                    <div
+                      class="faq__btn"
+                      role="button"
+                      aria-label="open"
+                      tabindex="0"
+                    >
                       <div class="arrow arrow--white"></div>
                     </div>
                   </div>
@@ -298,7 +345,12 @@
                         curabitur mauris morbi.
                       </p>
                     </div>
-                    <div class="faq__btn" role="button">
+                    <div
+                      class="faq__btn"
+                      role="button"
+                      aria-label="open"
+                      tabindex="0"
+                    >
                       <div class="arrow arrow--white"></div>
                     </div>
                   </div>
@@ -323,7 +375,12 @@
                         curabitur mauris morbi.
                       </p>
                     </div>
-                    <div class="faq__btn" role="button">
+                    <div
+                      class="faq__btn"
+                      role="button"
+                      aria-label="open"
+                      tabindex="0"
+                    >
                       <div class="arrow arrow--white"></div>
                     </div>
                   </div>
@@ -348,7 +405,12 @@
                         curabitur mauris morbi.
                       </p>
                     </div>
-                    <div class="faq__btn" role="button">
+                    <div
+                      class="faq__btn"
+                      role="button"
+                      aria-label="open"
+                      tabindex="0"
+                    >
                       <div class="arrow arrow--white"></div>
                     </div>
                   </div>
@@ -374,7 +436,12 @@
                         które przygotowują do wyjazdu: podstawyniemieckiego.pl
                       </p>
                     </div>
-                    <div class="faq__btn" role="button">
+                    <div
+                      class="faq__btn"
+                      role="button"
+                      aria-label="open"
+                      tabindex="0"
+                    >
                       <div class="arrow arrow--white"></div>
                     </div>
                   </div>
@@ -400,7 +467,12 @@
                         które przygotowują do wyjazdu: podstawyniemieckiego.pl
                       </p>
                     </div>
-                    <div class="faq__btn" role="button">
+                    <div
+                      class="faq__btn"
+                      role="button"
+                      aria-label="open"
+                      tabindex="0"
+                    >
                       <div class="arrow arrow--white"></div>
                     </div>
                   </div>
@@ -423,7 +495,12 @@
                         które przygotowują do wyjazdu: podstawyniemieckiego.pl
                       </p>
                     </div>
-                    <div class="faq__btn" role="button">
+                    <div
+                      class="faq__btn"
+                      role="button"
+                      aria-label="open"
+                      tabindex="0"
+                    >
                       <div class="arrow arrow--white"></div>
                     </div>
                   </div>
@@ -436,7 +513,6 @@
     </main>
     <script src="./scripts/toggleMobileMenu.js"></script>
     <script src="./scripts/lazyLoading.js"></script>
-
     <script src="./scripts/index.js"></script>
     <script src="./scripts/expandAnswer.js"></script>
     <script src="./scripts/scrollBtn.js"></script>

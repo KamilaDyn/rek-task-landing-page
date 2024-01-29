@@ -6,7 +6,8 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-
+  background-color: transparent;
+  border: none;
   @include lg {
     display: none;
   }

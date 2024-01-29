@@ -72,7 +72,7 @@ class OfferCard {
           </p>
         </div>
         <div class="card__btn">
-          <div class="action-btn">
+          <div class="action-btn" role="button" aria-label="więcej" tabindex="0">
             <p class="action-btn__text">
               WIĘCEJ <span class="action-btn__arrow"></span>
             </p>
