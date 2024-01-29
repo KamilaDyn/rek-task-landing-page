@@ -7,10 +7,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-inline: 20px;
+  height: 100%;
   transform: translateX(100vw);
-  height: 100vh;
   background-color: $blue;
+  overflow-y: auto;
 
   @include lg {
     position: static;
