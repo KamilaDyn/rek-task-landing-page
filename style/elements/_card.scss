@@ -3,7 +3,7 @@
   padding: 36px 42px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, fr);
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in;
   cursor: pointer;
   &__header {
     display: flex;
