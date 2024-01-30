@@ -2,7 +2,7 @@
   background-color: $blue;
   padding-block: 80px;
 
-  &__tabs {
+  &__bookmarks {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,23 +19,30 @@
       padding-bottom: 80px;
     }
   }
-  &__tab-btn:hover {
-    filter: $white-filter;
+  &__bookmark-btn {
+    background-color: transparent;
+    border: none;
+    &--active {
+      filter: $yellow-filter;
+    }
+    &:hover {
+      filter: $white-filter;
+    }
   }
-  &__tab-btn.active {
+  &__bookmark-btn.active {
     filter: $yellow-filter;
     &:hover {
       filter: $white-filter;
     }
   }
 
-  &__tab-text.active {
+  &__bookmark-text.active {
     color: $yellow;
     &:hover {
       color: white;
     }
   }
-  &__tab-text &:hover {
+  &__bookmark-text &:hover {
     color: white;
   }
 
@@ -55,6 +62,12 @@
   }
   &__content {
     width: 100%;
+    display: none;
+    opacity: 0;
+    &--active {
+      display: block;
+      opacity: 1;
+    }
   }
 
   &__item {
