@@ -1,12 +1,12 @@
 'use strict';
 
 class HamburgerMenu {
-  constructor() {
-    this.hamburgerBtn = document.querySelector('#hamburgerBtn');
-    this.menu = document.querySelector('#menu');
-    this.body = document.querySelector('body');
-    this.navList = document.querySelector('#navList');
-    this.navLinks = document.querySelectorAll('.nav__link');
+  constructor(hamburgerBtn, menu, body, navList, navLinks) {
+    this.hamburgerBtn = hamburgerBtn;
+    this.menu = menu;
+    this.body = body;
+    this.navList = navList;
+    this.navLinks = navLinks;
 
     this.handleHamburgerClick = this.toggleMenu.bind(this);
     this.handleLinkClick = (e, link) => this.closeMenu(e, link);
@@ -48,6 +48,4 @@ class HamburgerMenu {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  const hamburgerMenu = new HamburgerMenu();
-});
+export default HamburgerMenu;

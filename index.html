@@ -123,7 +123,7 @@
           </header>
           <section class="offers__container">
             <ul id="listOffer" class="offers__list">
-              <li class="offers__item lazy">
+              <li id="card-1" class="offers__item lazy">
                 <div class="card fade-in">
                   <header class="card__header">
                     <h3 class="card__title">Hydraulik</h3>
@@ -168,360 +168,42 @@
               Najczęstsze pytania.
             </h2>
           </header>
-          <div class="faq__tabs">
-            <div class="faq__tab lazy">
-              <div
-                class="faq__tab-btn action-btn active"
-                role="button"
-                aria-label="pytania pracodawców"
-                tabindex="0"
+          <div class="faq__bookmarks">
+            <button
+              class="faq__bookmark-btn action-btn faq__bookmark-btn--active lazy"
+              role="button"
+              aria-label="pytania pracodawców"
+              data-bookmark="1"
+            >
+              <span
+                class="faq__bookmark-text action-btn__text action-btn__text--in-lines"
               >
-                <h3
-                  class="faq__tab-text action-btn__text action-btn__text--in-lines active"
-                >
-                  <span class="line">Pytania</span>
-                  <span class="line">pracodawców</span>
-                </h3>
-                <div
-                  class="action-btn__arrow action-btn__arrow--big action-btn__arrow--rotate"
-                ></div>
-              </div>
-            </div>
-            <div class="faq__tab lazy">
-              <div
-                class="faq__tab-btn action-btn"
-                role="button"
-                aria-label="pytania pracowników"
-                tabindex="0"
+                <span class="line">Pytania</span>
+                <span class="line">pracodawców</span>
+              </span>
+              <span
+                class="action-btn__arrow action-btn__arrow--big action-btn__arrow--rotate"
+              ></span>
+            </button>
+            <button
+              class="faq__bookmark-btn action-btn lazy"
+              role="button"
+              aria-label="pytania pracowników"
+              data-bookmark="2"
+            >
+              <span
+                class="faq__bookmark-text action-btn__text action-btn__text--in-lines"
               >
-                <h3
-                  class="faq__tab-text action-btn__text action-btn__text--in-lines"
-                >
-                  <span class="line">Pytania</span>
-                  <span class="line">pracowników</span>
-                </h3>
-                <div class="action-btn__arrow action-btn__arrow--big"></div>
-              </div>
-            </div>
+                <span class="line">Pytania</span>
+                <span class="line">pracowników</span>
+              </span>
+              <span class="action-btn__arrow action-btn__arrow--big"></span>
+            </button>
           </div>
-          <div class="faq__content">
-            <div class="faq__columns">
-              <ul class="faq__list faq__column faq__column--1 lazy">
-                <li class="faq__item">
-                  <div class="faq__question">
-                    <header class="faq__question-header">
-                      <h4>Lorem ipsum dolor sim lorem?</h4>
-                    </header>
-                    <div class="text faq__description hidden">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem facilisi at tincidunt condimentum ipsum non. Felis
-                        erat curabitur mauris morbi. Felis erat curabitur mauris
-                        morbi.
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem facilisi at tincidunt condimentum ipsum non. Felis
-                        erat curabitur mauris morbi. Felis erat curabitur mauris
-                        morbi. Felis erat curabitur mauris morbi. Felis erat
-                        curabitur mauris morbi.
-                      </p>
-                    </div>
-                    <div
-                      class="faq__btn"
-                      role="button"
-                      aria-label="open"
-                      tabindex="0"
-                    >
-                      <div class="arrow arrow--white"></div>
-                    </div>
-                  </div>
-                </li>
-                <li class="faq__item">
-                  <div class="faq__question">
-                    <header class="faq__question-header">
-                      <h4>Lorem ipsum dolor sim lorem</h4>
-                    </header>
-                    <div class="text faq__description hidden">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem facilisi at tincidunt condimentum ipsum non. Felis
-                        erat curabitur mauris morbi. Felis erat curabitur mauris
-                        morbi.
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem facilisi at tincidunt condimentum ipsum non. Felis
-                        erat curabitur mauris morbi. Felis erat curabitur mauris
-                        morbi. Felis erat curabitur mauris morbi. Felis erat
-                        curabitur mauris morbi.
-                      </p>
-                    </div>
-                    <div
-                      class="faq__btn"
-                      role="button"
-                      aria-label="open"
-                      tabindex="0"
-                    >
-                      <div class="arrow arrow--white"></div>
-                    </div>
-                  </div>
-                </li>
-                <li class="faq__item">
-                  <div class="faq__question">
-                    <header class="faq__question-header">
-                      <h4>Lorem ipsum dolor sim lorem</h4>
-                    </header>
-                    <div class="text faq__description hidden">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem facilisi at tincidunt condimentum ipsum non. Felis
-                        erat curabitur mauris morbi. Felis erat curabitur mauris
-                        morbi.
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem facilisi at tincidunt condimentum ipsum non. Felis
-                        erat curabitur mauris morbi. Felis erat curabitur mauris
-                        morbi. Felis erat curabitur mauris morbi. Felis erat
-                        curabitur mauris morbi.
-                      </p>
-                    </div>
-                    <div
-                      class="faq__btn"
-                      role="button"
-                      aria-label="open"
-                      tabindex="0"
-                    >
-                      <div class="arrow arrow--white"></div>
-                    </div>
-                  </div>
-                </li>
-                <li class="faq__item">
-                  <div class="faq__question">
-                    <header class="faq__question-header">
-                      <h4>Lorem ipsum dolor sim lorem</h4>
-                    </header>
-                    <div class="text faq__description hidden">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem facilisi at tincidunt condimentum ipsum non. Felis
-                        erat curabitur mauris morbi. Felis erat curabitur mauris
-                        morbi.
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem facilisi at tincidunt condimentum ipsum non. Felis
-                        erat curabitur mauris morbi. Felis erat curabitur mauris
-                        morbi. Felis erat curabitur mauris morbi. Felis erat
-                        curabitur mauris morbi.
-                      </p>
-                    </div>
-                    <div
-                      class="faq__btn"
-                      role="button"
-                      aria-label="open"
-                      tabindex="0"
-                    >
-                      <div class="arrow arrow--white"></div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <ul class="faq__list faq__column faq__column--2 lazy">
-                <li class="faq__item">
-                  <div class="faq__question">
-                    <header class="faq__question-header">
-                      <h4>
-                        Lorem ipsum dolor sim lorem sim lorem dolor sim sim
-                        lorem ipsum?
-                      </h4>
-                    </header>
-                    <div class="text faq__description hidden">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem facilisi at tincidunt condimentum ipsum non. Felis
-                        erat curabitur mauris morbi. Felis erat curabitur mauris
-                        morbi.
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem facilisi at tincidunt condimentum ipsum non. Felis
-                        erat curabitur mauris morbi. Felis erat curabitur mauris
-                        morbi. Felis erat curabitur mauris morbi. Felis erat
-                        curabitur mauris morbi.
-                      </p>
-                    </div>
-                    <div
-                      class="faq__btn"
-                      role="button"
-                      aria-label="open"
-                      tabindex="0"
-                    >
-                      <div class="arrow arrow--white"></div>
-                    </div>
-                  </div>
-                </li>
-                <li class="faq__item">
-                  <div class="faq__question">
-                    <header class="faq__question-header">
-                      <h4>Lorem ipsum dolor sim lorem</h4>
-                    </header>
-                    <div class="text faq__description hidden">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem facilisi at tincidunt condimentum ipsum non. Felis
-                        erat curabitur mauris morbi. Felis erat curabitur mauris
-                        morbi.
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem facilisi at tincidunt condimentum ipsum non. Felis
-                        erat curabitur mauris morbi. Felis erat curabitur mauris
-                        morbi. Felis erat curabitur mauris morbi. Felis erat
-                        curabitur mauris morbi.
-                      </p>
-                    </div>
-                    <div
-                      class="faq__btn"
-                      role="button"
-                      aria-label="open"
-                      tabindex="0"
-                    >
-                      <div class="arrow arrow--white"></div>
-                    </div>
-                  </div>
-                </li>
-                <li class="faq__item">
-                  <div class="faq__question">
-                    <header class="faq__question-header">
-                      <h4>Lorem ipsum dolor sim lorem</h4>
-                    </header>
-                    <div class="text faq__description hidden">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem facilisi at tincidunt condimentum ipsum non. Felis
-                        erat curabitur mauris morbi. Felis erat curabitur mauris
-                        morbi.
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem facilisi at tincidunt condimentum ipsum non. Felis
-                        erat curabitur mauris morbi. Felis erat curabitur mauris
-                        morbi. Felis erat curabitur mauris morbi. Felis erat
-                        curabitur mauris morbi.
-                      </p>
-                    </div>
-                    <div
-                      class="faq__btn"
-                      role="button"
-                      aria-label="open"
-                      tabindex="0"
-                    >
-                      <div class="arrow arrow--white"></div>
-                    </div>
-                  </div>
-                </li>
-                <li class="faq__item">
-                  <div class="faq__question grid">
-                    <header class="faq__question-header">
-                      <h4>
-                        Lorem ipsum dolor sim lorem sim lorem dolor sim sim
-                        lorem ipsum?
-                      </h4>
-                    </header>
-                    <div class="text faq__description hidden">
-                      <p>
-                        Wymagana jest znajomość języka przynajmniej na poziomie
-                        podstawowym, ponieważ jest on niezbędny do efektywnej
-                        komunikacji. Polecamy darmowe kursy niemieckiego online
-                      </p>
-                      <p>
-                        Wymagana jest znajomość języka przynajmniej na poziomie
-                        podstawowym, ponieważ jest on niezbędny do efektywnej
-                        komunikacji. Polecamy darmowe kursy niemieckiego online,
-                        które przygotowują do wyjazdu: podstawyniemieckiego.pl
-                      </p>
-                    </div>
-                    <div
-                      class="faq__btn"
-                      role="button"
-                      aria-label="open"
-                      tabindex="0"
-                    >
-                      <div class="arrow arrow--white"></div>
-                    </div>
-                  </div>
-                </li>
-                <li class="faq__item">
-                  <div class="faq__question grid">
-                    <header class="faq__question-header">
-                      <h4>
-                        Lorem ipsum dolor sim lorem sim lorem dolor sim sim
-                        lorem ipsum?
-                      </h4>
-                    </header>
-                    <div class="text faq__description hidden">
-                      <p>
-                        Wymagana jest znajomość języka przynajmniej na poziomie
-                        podstawowym, ponieważ jest on niezbędny do efektywnej
-                        komunikacji. Polecamy darmowe kursy niemieckiego online
-                      </p>
-                      <p>
-                        Wymagana jest znajomość języka przynajmniej na poziomie
-                        podstawowym, ponieważ jest on niezbędny do efektywnej
-                        komunikacji. Polecamy darmowe kursy niemieckiego online,
-                        które przygotowują do wyjazdu: podstawyniemieckiego.pl
-                      </p>
-                    </div>
-                    <div
-                      class="faq__btn"
-                      role="button"
-                      aria-label="open"
-                      tabindex="0"
-                    >
-                      <div class="arrow arrow--white"></div>
-                    </div>
-                  </div>
-                </li>
-                <li class="faq__item">
-                  <div class="faq__question grid">
-                    <header class="faq__question-header">
-                      <h4>Lorem ipsum dolor sim lorem?</h4>
-                    </header>
-                    <div class="text faq__description hidden">
-                      <p>
-                        Wymagana jest znajomość języka przynajmniej na poziomie
-                        podstawowym, ponieważ jest on niezbędny do efektywnej
-                        komunikacji. Polecamy darmowe kursy niemieckiego online
-                      </p>
-                      <p>
-                        Wymagana jest znajomość języka przynajmniej na poziomie
-                        podstawowym, ponieważ jest on niezbędny do efektywnej
-                        komunikacji. Polecamy darmowe kursy niemieckiego online,
-                        które przygotowują do wyjazdu: podstawyniemieckiego.pl
-                      </p>
-                    </div>
-                    <div
-                      class="faq__btn"
-                      role="button"
-                      aria-label="open"
-                      tabindex="0"
-                    >
-                      <div class="arrow arrow--white"></div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <div class="faq__questions-wrapper" id="faqQuestions"></div>
         </div>
       </section>
     </main>
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/toggleMobileMenu.js"></script>
-    <script src="./scripts/lazyLoading.js"></script>
-    <script src="./scripts/expandAnswer.js"></script>
-    <script src="./scripts/scrollBtn.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>

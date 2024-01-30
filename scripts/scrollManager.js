@@ -1,9 +1,9 @@
 'use strict';
 
 class ScrollManager {
-  constructor() {
-    this.scrollBtn = document.querySelector('#scrollBtn');
-    this.navLinks = document.querySelectorAll('.nav__item');
+  constructor(scrollBtn, navItems) {
+    this.scrollBtn = scrollBtn;
+    this.navItems = navItems;
     this.initialize();
   }
 
@@ -18,7 +18,7 @@ class ScrollManager {
   }
 
   setupNavLinks() {
-    this.navLinks.forEach((link) => {
+    this.navItems.forEach((link) => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
         if (e.target.classList.contains('nav__link')) {
@@ -37,6 +37,4 @@ class ScrollManager {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const scrollManager = new ScrollManager();
-});
+export default ScrollManager;

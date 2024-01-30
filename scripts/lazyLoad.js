@@ -30,11 +30,4 @@ class LazyLoadObserver {
   }
 }
 
-(() => {
-  'use strict';
-
-  const lazyLoadObserver = new LazyLoadObserver('.lazy', {
-    root: null,
-    threshold: 0.15,
-  });
-})();
+export default LazyLoadObserver;
