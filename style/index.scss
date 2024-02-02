@@ -28,6 +28,9 @@ li {
 @import './elements/common';
 @import './elements/mobile-wrapper';
 @import './elements/_header';
+@import './elements/section-header';
+@import './elements/section-title';
+@import './elements/section-subtitle';
 @import './elements/_hamburger';
 @import './elements/_menu';
 @import './elements/_nav';
@@ -38,7 +41,6 @@ li {
 @import './elements/social-group';
 
 // Sections
-@import './sections/section';
 @import './sections/banner';
 @import './sections/offers';
 @import './sections/faq';
