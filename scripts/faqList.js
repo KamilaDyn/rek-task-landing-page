@@ -59,9 +59,13 @@ class FaqList {
 
     const midpoint = Math.ceil(data.length / 2);
 
-    data.forEach((element) => {
-      const listItem = this.createColumn(element);
-      columList.appendChild(listItem);
+    data.forEach((item, index) => {
+      const listItem = this.createColumn(item);
+      if (index < midpoint) {
+        columList.appendChild(listItem);
+      } else {
+        columList2.appendChild(listItem);
+      }
     });
 
     this.questionsContainer.appendChild(faqContent);

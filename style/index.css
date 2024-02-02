@@ -811,33 +811,35 @@ li {
   display: block;
   opacity: 1;
 }
-.faq__list {
+.faq__columns {
   -moz-columns: 1;
        columns: 1;
   -moz-column-gap: 12px;
        column-gap: 12px;
 }
-@media (min-width: 992px) {
-  .faq__list {
-    -moz-columns: 2;
-         columns: 2;
+@media (min-width: 768px) {
+  .faq__columns {
     -moz-column-gap: 15px;
          column-gap: 15px;
   }
 }
 @media (min-width: 992px) {
-  .faq__list {
+  .faq__columns {
+    -moz-columns: 2;
+         columns: 2;
     -moz-column-gap: 30px;
          column-gap: 30px;
   }
+}
+.faq__list {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
 }
 .faq__item {
   list-style: none;
   width: 100%;
   padding-bottom: 12px;
   transition: all 0.1s linear;
-  -moz-column-break-inside: avoid;
-       break-inside: avoid;
 }
 .faq__item:first-child .faq__question.active {
   margin-top: 0;

@@ -40,17 +40,19 @@
       opacity: 1;
     }
   }
-  &__list {
+  &__columns {
     columns: 1;
-
     column-gap: 12px;
-    @include lg {
-      columns: 2;
+    @include md {
       column-gap: 15px;
     }
     @include lg {
+      columns: 2;
       column-gap: 30px;
     }
+  }
+  &__list {
+    break-inside: avoid;
   }
 
   &__item {
@@ -58,7 +60,7 @@
     width: 100%;
     padding-bottom: 12px;
     transition: all 0.1s linear;
-    break-inside: avoid;
+
     &:first-child {
       .faq__question.active {
         margin-top: 0;
@@ -72,6 +74,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     padding: 12px 0 12px 10px;
+
     @include md {
       padding: 20px 40px;
     }
