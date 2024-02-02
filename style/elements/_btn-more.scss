@@ -1,0 +1,17 @@
+.btn-more {
+  cursor: pointer;
+  text-align: right;
+
+  &__text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  &__arrow {
+    width: 16px;
+    height: 16px;
+    background-image: url('../../assets/arrow-up.svg');
+    background-size: cover;
+    display: inline-block;
+  }
+}

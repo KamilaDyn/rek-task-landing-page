@@ -20,22 +20,6 @@
       padding-bottom: 80px;
     }
   }
-  &__bookmark-btn {
-    background-color: transparent;
-    border: none;
-    &--active {
-      filter: $yellow-filter;
-    }
-    &:hover {
-      filter: $white-filter;
-    }
-  }
-  &__bookmark-btn.active {
-    filter: $yellow-filter;
-    &:hover {
-      filter: $white-filter;
-    }
-  }
 
   &__bookmark-text.active {
     color: $yellow;

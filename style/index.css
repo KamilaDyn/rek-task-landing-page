@@ -396,20 +396,35 @@ li {
   border-radius: 50px;
 }
 
+.btn-more {
+  cursor: pointer;
+  text-align: right;
+}
+.btn-more__text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+}
+.btn-more__arrow {
+  width: 16px;
+  height: 16px;
+  background-image: url("../../assets/arrow-up.svg");
+  background-size: cover;
+  display: inline-block;
+}
+
 .action-btn {
   display: flex;
   align-items: center;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 .action-btn__text {
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 22px;
   text-align: left;
-}
-.action-btn__text--in-lines {
   margin-right: 24px;
-  text-transform: none;
 }
 .action-btn__arrow {
   width: 16px;
@@ -424,6 +439,12 @@ li {
 }
 .action-btn__arrow--rotate {
   transform: rotate(180deg);
+}
+.action-btn--active {
+  filter: brightness(0) saturate(100%) invert(98%) sepia(59%) saturate(1217%) hue-rotate(10deg) brightness(100%) contrast(83%);
+}
+.action-btn:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(98%) saturate(0%) hue-rotate(315deg) brightness(104%) contrast(102%);
 }
 
 .scroll-btn {
@@ -771,22 +792,6 @@ li {
          column-gap: 30px;
     padding-bottom: 80px;
   }
-}
-.faq__bookmark-btn {
-  background-color: transparent;
-  border: none;
-}
-.faq__bookmark-btn--active {
-  filter: brightness(0) saturate(100%) invert(98%) sepia(59%) saturate(1217%) hue-rotate(10deg) brightness(100%) contrast(83%);
-}
-.faq__bookmark-btn:hover {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(98%) saturate(0%) hue-rotate(315deg) brightness(104%) contrast(102%);
-}
-.faq__bookmark-btn.active {
-  filter: brightness(0) saturate(100%) invert(98%) sepia(59%) saturate(1217%) hue-rotate(10deg) brightness(100%) contrast(83%);
-}
-.faq__bookmark-btn.active:hover {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(98%) saturate(0%) hue-rotate(315deg) brightness(104%) contrast(102%);
 }
 .faq__bookmark-text.active {
   color: #d1e85a;

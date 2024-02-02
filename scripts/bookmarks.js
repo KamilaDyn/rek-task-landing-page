@@ -26,19 +26,17 @@ class Bookmarks {
   }
 
   handleBookmarkClick(e) {
-    const closestBookmark = e.target.closest('.faq__bookmark-btn');
+    const closestBookmark = e.target.closest('.action-btn');
     if (!closestBookmark) return;
 
     const activeBookmark = closestBookmark.dataset.bookmark;
-
     this.bookmarks.forEach((bookmark) => {
-      bookmark.classList.remove('faq__bookmark-btn--active');
+      bookmark.classList.remove('action-btn--active');
     });
-
-    closestBookmark.classList.add('faq__bookmark-btn--active');
+    closestBookmark.classList.add('action-btn--active');
 
     this.faqContentContainer.forEach((content) => {
-      content.classList.remove('faq__content--active');
+      content.classList.remove('action-btn--active');
     });
 
     this.questionsContainer.innerHTML = '';

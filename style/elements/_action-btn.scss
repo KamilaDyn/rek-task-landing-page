@@ -2,15 +2,13 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
   &__text {
-    text-transform: uppercase;
     font-weight: 700;
     font-size: 22px;
     text-align: left;
-    &--in-lines {
-      margin-right: 24px;
-      text-transform: none;
-    }
+    margin-right: 24px;
   }
   &__arrow {
     width: 16px;
@@ -25,5 +23,11 @@
     &--rotate {
       transform: rotate(180deg);
     }
+  }
+  &--active {
+    filter: $yellow-filter;
+  }
+  &:hover {
+    filter: $white-filter;
   }
 }

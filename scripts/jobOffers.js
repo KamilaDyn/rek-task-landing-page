@@ -28,13 +28,11 @@ class JobOffers {
               ${element.description}
             </p>
           </div>
-          <div class="card__btn">
-            <div class="action-btn" role="button" aria-label="więcej" tabindex="0">
-              <p class="action-btn__text">
-                WIĘCEJ <span class="action-btn__arrow"></span>
+          <div class="btn-more card__btn" role="button" aria-label="więcej" tabindex="0">
+              <p class="btn-more__text">
+                WIĘCEJ <span class="btn-more__arrow"></span>
               </p>
             </div>
-          </div>
         </div>`;
 
     card.innerHTML = cardContent;
