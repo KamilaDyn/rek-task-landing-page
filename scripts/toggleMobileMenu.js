@@ -7,18 +7,24 @@ class HamburgerMenu {
     this.body = body;
     this.navList = navList;
     this.navLinks = navLinks;
+  }
 
+  init() {
+    this.bindEvents();
+    this.setupEvents();
+  }
+  bindEvents() {
     this.handleHamburgerClick = this.toggleMenu.bind(this);
-    this.handleLinkClick = (e, link) => this.closeMenu(e, link);
     this.handleResize = this.handleResize.bind(this);
-
+  }
+  setupEvents() {
     this.hamburgerBtn.addEventListener('click', this.handleHamburgerClick);
+    this.handleLinkClick = (e, link) => this.closeMenu(e, link);
     this.navLinks.forEach((link) => {
       link.addEventListener('click', (e) => this.handleLinkClick(e, link));
     });
     window.addEventListener('resize', this.handleResize);
   }
-
   toggleMenu() {
     this.hamburgerBtn.classList.toggle('active');
     this.menu.classList.toggle('active');

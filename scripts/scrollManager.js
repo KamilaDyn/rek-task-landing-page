@@ -4,7 +4,6 @@ class ScrollManager {
   constructor(scrollBtn, navItems) {
     this.scrollBtn = scrollBtn;
     this.navItems = navItems;
-    this.initialize();
   }
 
   scroll(event) {
@@ -12,7 +11,7 @@ class ScrollManager {
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
 
-  initialize() {
+  init() {
     this.setupNavLinks();
     this.setupScrollButton();
   }

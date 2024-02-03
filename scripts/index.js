@@ -4,7 +4,6 @@ import Bookmarks from './bookmarks.js';
 import LazyLoadObserver from './lazyLoad.js';
 import ScrollManager from './scrollManager.js';
 import JobOffers from './jobOffers.js';
-
 import jobs from './data/jobs.js';
 import employeeQuestion from './data/employeesQuestion.js';
 import employerQuestion from './data/employerQuestion.js';
@@ -32,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
   );
   const jobOffers = new JobOffers(offersList, jobs);
   const listOpen = new ListOpen(employerQuestion, questionsContainer);
+
   const bookmark = new Bookmarks(
     bookmarksContainer,
     bookmarks,
@@ -40,9 +40,16 @@ document.addEventListener('DOMContentLoaded', function () {
     employerQuestion,
     employeeQuestion
   );
+
   const lazyLoadObserver = new LazyLoadObserver('.lazy', {
     root: null,
     threshold: 0.15,
   });
   const scrollManager = new ScrollManager(scrollBtn, navItems);
+  listOpen.init();
+  bookmark.init();
+  jobOffers.init();
+  lazyLoadObserver.init();
+  scrollManager.init();
+  hamburgerMenu.init();
 });

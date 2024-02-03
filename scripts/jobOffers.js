@@ -2,10 +2,31 @@ class JobOffers {
   constructor(offers, jobs) {
     this.jobs = jobs;
     this.offersList = offers;
+  }
+
+  init() {
+    this.bindEvents();
+    this.setupEvents();
+  }
+
+  bindEvents() {
     this.createCard = this.createCard.bind(this);
     this.openLayout = this.openLayout.bind(this);
+  }
 
-    this.init();
+  setupEvents() {
+    this.jobs.forEach((element) => {
+      const offerCard = this.createCard(element);
+      this.offersList.appendChild(offerCard);
+    });
+
+    this.cardButton = document.querySelectorAll('.card__btn');
+    this.cardButton.forEach((button) => {
+      button.addEventListener('click', (e) => {
+        const getCrdId = e.target.closest('.offers__item').getAttribute('id');
+        this.openLayout(getCrdId);
+      });
+    });
   }
   createCard(element) {
     const card = document.createElement('li');
@@ -41,20 +62,6 @@ class JobOffers {
 
   openLayout(id) {
     console.log(`Job offer to display with ${id}`);
-  }
-  init() {
-    this.jobs.forEach((element) => {
-      const offerCard = this.createCard(element);
-      this.offersList.appendChild(offerCard);
-    });
-
-    this.cardButton = document.querySelectorAll('.card__btn');
-    this.cardButton.forEach((button) => {
-      button.addEventListener('click', (e) => {
-        const getCrdId = e.target.closest('.offers__item').getAttribute('id');
-        this.openLayout(getCrdId);
-      });
-    });
   }
 }
 

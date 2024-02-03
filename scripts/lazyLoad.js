@@ -3,21 +3,16 @@
 class LazyLoadObserver {
   constructor(selector, options = {}) {
     this.items = document.querySelectorAll(selector);
-    this.revealElements = this.revealElements.bind(this);
-
     this.options = options;
-    this.init();
   }
-
-  revealElements(entries, observer) {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.remove('item--hidden');
-      observer.unobserve(entry.target);
-    });
-  }
-
   init() {
+    this.bindEvents();
+    this.setupEvents();
+  }
+  bindEvents() {
+    this.revealElements = this.revealElements.bind(this);
+  }
+  setupEvents() {
     this.items.forEach((item) => {
       item.classList.add('item--hidden');
     });
@@ -26,6 +21,13 @@ class LazyLoadObserver {
 
     this.items.forEach((item) => {
       this.observer.observe(item);
+    });
+  }
+  revealElements(entries, observer) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.remove('item--hidden');
+      observer.unobserve(entry.target);
     });
   }
 }

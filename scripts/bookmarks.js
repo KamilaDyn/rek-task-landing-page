@@ -15,11 +15,12 @@ class Bookmarks {
     this.questionsContainer = questionsContainer;
     this.employeeQuestion = employeeQuestion;
     this.employerQuestion = employerQuestion;
-
-    this.init();
   }
 
   init() {
+    this.setupEvents();
+  }
+  setupEvents() {
     this.bookmarksContainer.addEventListener('click', (e) => {
       this.handleBookmarkClick(e);
     });
@@ -45,6 +46,7 @@ class Bookmarks {
         this.employerQuestion,
         this.questionsContainer
       );
+      this.faqInstance.init();
     }
 
     if (activeBookmark === '2') {
@@ -52,6 +54,7 @@ class Bookmarks {
         this.employeeQuestion,
         this.questionsContainer
       );
+      this.faqInstance.init();
     }
   }
 }

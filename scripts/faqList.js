@@ -2,10 +2,6 @@ class FaqList {
   constructor(questionsData, questionsContainer) {
     this.questionsData = questionsData;
     this.questionsContainer = questionsContainer;
-    this.expandElements = this.expandElements.bind(this);
-    this.handleBtnClick = this.handleBtnClick.bind(this);
-
-    this.init();
   }
   createColumn(element) {
     const column = document.createElement('li');
@@ -73,11 +69,19 @@ class FaqList {
   }
 
   init() {
+    this.setupEvents();
+    this.bindEvents();
+  }
+  bindEvents() {
+    this.expandElements = this.expandElements.bind(this);
+    this.handleBtnClick = this.handleBtnClick.bind(this);
+  }
+  setupEvents() {
     this.createList(this.questionsData, 1);
+
     this.faqContent = this.questionsContainer.querySelector('.faq__content');
     this.expandButtons = this.faqContent.querySelectorAll('.faq__btn');
     this.questions = document.querySelectorAll('.faq__question');
-
     this.headers = document.querySelectorAll('.faq__question-header');
 
     this.expandButtons.forEach((btn) => {
@@ -95,7 +99,6 @@ class FaqList {
       });
     });
   }
-
   handleBtnClick(e, questions) {
     const clickedBtn = e.target;
     const getQuestion = clickedBtn.closest('.faq__question');
