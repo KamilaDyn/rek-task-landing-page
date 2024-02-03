@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-style: normal;
   font-family: "arboria", sans-serif;
-  transition: all 0.3s ease-in-out;
 }
 
 html {
@@ -127,6 +126,10 @@ li {
 .item--hidden {
   opacity: 0;
   transform: translateY(8rem);
+}
+
+.lazy {
+  transition: all 0.3s linear;
 }
 
 .mobile-wrapper {
@@ -323,6 +326,7 @@ li {
 .nav__link {
   color: #d1e85a;
   text-decoration: none;
+  transition: all 0.3s ease-in;
 }
 @media (min-width: 992px) {
   .nav__link {
@@ -344,6 +348,7 @@ li {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, fr);
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .card__header {
   display: flex;
@@ -419,6 +424,7 @@ li {
   cursor: pointer;
   background-color: transparent;
   border: none;
+  transition: all 0.3s ease-in-out;
 }
 .action-btn__text {
   font-weight: 700;
@@ -456,6 +462,7 @@ li {
   background-color: #944385;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 .scroll-btn__arrow {
   width: 27px;
@@ -543,6 +550,7 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  transition: all 0.3s ease;
 }
 .social__icon:hover {
   filter: brightness(0) saturate(100%) invert(88%) sepia(4%) saturate(1534%) hue-rotate(301deg) brightness(92%) contrast(111%);
@@ -834,12 +842,12 @@ li {
 .faq__list {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
+  transition: height 0.2s ease;
 }
 .faq__item {
   list-style: none;
   width: 100%;
   padding-bottom: 12px;
-  transition: all 0.1s linear;
 }
 .faq__item:first-child .faq__question.active {
   margin-top: 0;
@@ -850,6 +858,7 @@ li {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   padding: 12px 0 12px 10px;
+  transition: all 0.3s linear;
 }
 @media (min-width: 768px) {
   .faq__question {
@@ -862,6 +871,7 @@ li {
   border-radius: 32px;
   padding: 20px 0 20px 28px;
   margin-block: 15px;
+  transition: all 0.3s linear;
 }
 @media (min-width: 768px) {
   .faq__question.active {
@@ -879,6 +889,7 @@ li {
   grid-column: span 5;
   font-size: 20px;
   font-weight: 700;
+  cursor: pointer;
 }
 .faq__description {
   grid-column: span 5;
@@ -886,6 +897,7 @@ li {
   padding-top: 20px;
   padding-bottom: 12px;
   display: none;
+  transition: all 0.3s linear;
 }
 .faq__btn {
   display: flex;

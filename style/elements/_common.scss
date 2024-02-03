@@ -48,3 +48,7 @@
   opacity: 0;
   transform: translateY(8rem);
 }
+
+.lazy {
+  transition: all 0.3s linear;
+}

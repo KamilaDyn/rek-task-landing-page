@@ -4,6 +4,8 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
+  transition: all 0.3s ease-in-out;
+
   &__text {
     font-weight: 700;
     font-size: 22px;

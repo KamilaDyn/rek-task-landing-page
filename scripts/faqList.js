@@ -78,13 +78,21 @@ class FaqList {
     this.expandButtons = this.faqContent.querySelectorAll('.faq__btn');
     this.questions = document.querySelectorAll('.faq__question');
 
+    this.headers = document.querySelectorAll('.faq__question-header');
+
     this.expandButtons.forEach((btn) => {
       btn.addEventListener('click', (e) =>
         this.handleBtnClick(e, this.questions)
       );
       btn.addEventListener('keypress', (e) =>
-        this.expandElements(e, this.questions)
+        this.handleBtnClick(e, this.questions)
       );
+    });
+
+    this.headers.forEach((header) => {
+      header.addEventListener('click', (e) => {
+        this.handleBtnClick(e, this.questions);
+      });
     });
   }
 
@@ -105,6 +113,7 @@ class FaqList {
     });
 
     getQuestion.classList.toggle('active');
+
     const hasActiveClass = getQuestion.classList.contains('active');
     const button = getQuestion.querySelector('.faq__btn');
     const arrow = getQuestion.querySelector('.arrow');

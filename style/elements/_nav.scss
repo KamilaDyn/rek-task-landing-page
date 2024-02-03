@@ -28,6 +28,8 @@
   &__link {
     color: $yellow;
     text-decoration: none;
+    transition: all 0.3s ease-in;
+
     @include lg {
       color: $pink-500;
       font-size: 14px;
