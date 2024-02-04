@@ -4,11 +4,10 @@ import Bookmarks from './bookmarks.js';
 import LazyLoadObserver from './lazyLoad.js';
 import ScrollManager from './scrollManager.js';
 import JobOffers from './jobOffers.js';
-import jobs from './data/jobs.js';
-import employeeQuestion from './data/employeesQuestion.js';
-import employerQuestion from './data/employerQuestion.js';
 
-document.addEventListener('DOMContentLoaded', function () {
+import { fetchEmployers, fetchEmployees, fetchJobs } from './config.js';
+
+document.addEventListener('DOMContentLoaded', async function () {
   const questionsContainer = document.querySelector('#faqQuestions'),
     hamburgerBtn = document.querySelector('#hamburgerBtn'),
     menu = document.querySelector('#menu'),
@@ -22,6 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
     navItems = document.querySelectorAll('.nav__item'),
     bookmarks = document.querySelectorAll('.faq__bookmark-btn');
 
+  const fetchEmployerData = await fetchEmployers();
+  const fetchEmployeesData = await fetchEmployees();
+  const fetchJobsData = await fetchJobs();
+
   const hamburgerMenu = new HamburgerMenu(
     hamburgerBtn,
     menu,
@@ -29,16 +32,16 @@ document.addEventListener('DOMContentLoaded', function () {
     navList,
     navLinks
   );
-  const jobOffers = new JobOffers(offersList, jobs);
-  const listOpen = new ListOpen(employerQuestion, questionsContainer);
+  const jobOffers = new JobOffers(offersList, fetchJobsData);
+  const listOpen = new ListOpen(fetchEmployerData, questionsContainer);
 
   const bookmark = new Bookmarks(
     bookmarksContainer,
     bookmarks,
     faqContent,
     questionsContainer,
-    employerQuestion,
-    employeeQuestion
+    fetchEmployerData,
+    fetchEmployeesData
   );
 
   const lazyLoadObserver = new LazyLoadObserver('.lazy', {
