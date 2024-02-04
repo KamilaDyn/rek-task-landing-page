@@ -6,7 +6,7 @@ async function fetchEmployers() {
   try {
     const response = await fetch(employerData);
     const dataArray = await response.json();
-    return dataArray.employerQuestion;
+    return dataArray;
   } catch (error) {
     console.error(error);
   }
@@ -16,7 +16,7 @@ async function fetchEmployees() {
   try {
     const response = await fetch(employeesData);
     const dataArray = await response.json();
-    return dataArray.employeesQuestion;
+    return dataArray;
   } catch (error) {
     console.error(error);
   }
@@ -25,7 +25,7 @@ async function fetchJobs() {
   try {
     const response = await fetch(jobsData);
     const dataArray = await response.json();
-    return dataArray.jobs;
+    return dataArray;
   } catch (error) {
     console.error(error);
   }
