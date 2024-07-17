@@ -413,7 +413,7 @@ li {
 .btn-more__arrow {
   width: 16px;
   height: 16px;
-  background-image: url("../../assets/arrow-up.svg");
+  background-image: url("./../assets/arrow-up.svg");
   background-size: cover;
   display: inline-block;
 }
@@ -435,7 +435,7 @@ li {
 .action-btn__arrow {
   width: 16px;
   height: 16px;
-  background-image: url("../../assets/arrow-up.svg");
+  background-image: url("./../assets/arrow-up.svg");
   background-size: cover;
   display: inline-block;
 }
@@ -467,7 +467,7 @@ li {
 .scroll-btn__arrow {
   width: 27px;
   height: 32px;
-  background-image: url("../../assets/arrow-down.svg");
+  background-image: url("./../assets/arrow-down.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -556,10 +556,10 @@ li {
   filter: brightness(0) saturate(100%) invert(88%) sepia(4%) saturate(1534%) hue-rotate(301deg) brightness(92%) contrast(111%);
 }
 .social--fb {
-  background-image: url("../../assets/fb-icon.svg");
+  background-image: url("./../assets/fb-icon.svg");
 }
 .social--inst {
-  background-image: url("../../assets/insta-icon.svg");
+  background-image: url("./../assets/insta-icon.svg");
 }
 
 .banner {
@@ -725,10 +725,10 @@ li {
   background-color: #f5cdd5;
 }
 .banner__column-two {
-  background-image: url(../../assets/man.webp);
+  background-image: url(./../assets/man.webp);
 }
 .banner__column-three {
-  background-image: url(../../assets/woman.webp);
+  background-image: url(./../assets/woman.webp);
 }
 
 @keyframes a1 {
