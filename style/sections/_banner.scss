@@ -134,9 +134,9 @@
     background-color: $pink-100;
   }
   &__column-two {
-    background-image: url(../../assets/man.webp);
+    background-image: url(./../assets/man.webp);
   }
   &__column-three {
-    background-image: url(../../assets/woman.webp);
+    background-image: url(./../assets/woman.webp);
   }
 }
